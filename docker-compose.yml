@@ -1,6 +1,6 @@
-
 services:
   backend:
+    image: yogamrutha/docker-backend-2400032394:latest
     build:
       context: ./backend
       dockerfile: Dockerfile
@@ -14,6 +14,7 @@ services:
       - "host.docker.internal:host-gateway"
 
   frontend:
+    image: yogamrutha/docker-frontend-2400032394:latest
     build:
       context: ./frontend
       dockerfile: Dockerfile
